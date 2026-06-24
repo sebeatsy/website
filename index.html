@@ -511,8 +511,12 @@
 
     <section class="content-section" id="booking">
         <h2>Booking & Contact</h2>
-        <!-- Form action updated to FormSubmit API token link -->
-        <form class="contact-form" action="https://formsubmit.co/c04b86ee-f024-4e71-95b2-6972577a3869" method="POST">
+        <!-- Form action and access key configured for Web3Forms -->
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            
+            <!-- Hidden Access Key field -->
+            <input type="hidden" name="access_key" value="c04b86ee-f024-4e71-95b2-6972577a3869">
+            
             <div class="form-group">
                 <label for="name">Name / Organization</label>
                 <input type="text" id="name" name="name" required>
